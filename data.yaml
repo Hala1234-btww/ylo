@@ -1,0 +1,9 @@
+names:
+- donkey cart
+- handcart
+- manhole
+- qingchi
+- rickshaw
+nc: 5
+train: /content/datasets/yolov5-1/train/images
+val: /content/datasets/yolov5-1/valid/images
