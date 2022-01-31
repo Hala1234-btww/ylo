@@ -1,0 +1,28 @@
+#translation
+translater = Translator()
+out = translater.translate(ans, dest="ur")
+text=out.text
+print(text)
+if ans == "qingchi":
+  text = "آگے چنگچی ہے"
+elif ans == "manhole":
+  text="آگے گٹر ہے"
+elif ans == "donkey cart":
+  text = "آگے گدہ گاری ہے"
+elif ans == "handcart":
+  text = "آگے ریڑھی ہے"
+elif ans == "rickshaw":
+  text = "آگے رکشہ ہے"
+
+
+mytext = "آپ کیسے ہو"
+language= 'ur'
+output = gTTS(text=text, lang=language, slow=False)
+output.save("output.mp3")
+
+os.system("start output.mp3")
+
+
+
+import IPython
+IPython.display.Audio(('output.mp3')
